@@ -1,0 +1,19 @@
+{
+  "id": "7WONDERS",
+  "name": "Isaque's Bucket List",
+  "short_name": "Isaque's Bucket List",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#33CC66",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "app_name": "Isaque's Bucket List",
+  "description": "Meu checklist interativo de lugares incríveis que quero/já conheci! 🌍✨"
+}

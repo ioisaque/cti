@@ -1,0 +1,20 @@
+{
+  "id": "PORTFOLIO_CTI",
+  "name": "Portfólio CTI",
+  "short_name": "Portfólio CTI",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#000000",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "app_name": "Portfólio CTI",
+  "description": "Portifólio da turma de informática de 2026, cada aluno expõe um projeto próprio."
+}

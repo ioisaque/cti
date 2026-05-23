@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bucket List</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>Bucket List Around the World ✈️ 🌎</h1>
+    <p class="lede">Checklist interativo de lugares incríveis que quero/já conheci.</p>
+    <p class="progress" id="progress" aria-live="polite"></p>
+  </header>
+
+  <main>
+    <ul class="wonders" id="wonders">
+      <li class="wonder col-2" data-id="piazza-venezia">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/piazza-venezia.avif" width="3072" height="2048" alt="Piazza Venezia in Rome" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="piazza-venezia" aria-describedby="desc-piazza-venezia">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Piazza Venezia</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-piazza-venezia">Rome, Italy</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+Venezia+Rome"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Piazza Venezia in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder col-2" data-id="miami-beach">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/miami-beach.avif" width="3701" height="2483" alt="South Beach Miami Beach shoreline"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="miami-beach" aria-describedby="desc-miami">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Miami Beach</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-miami">Miami Beach, United States</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=South+Beach+Miami+Beach"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Miami Beach in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder col-2" data-id="pyramids-giza">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/pyramids-giza.avif" width="5568" height="3712" alt="Giza pyramid complex under hazy sky"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="pyramids-giza" aria-describedby="desc-pyramids">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Pyramids of Giza</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-pyramids">Giza, Egypt</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Great+Pyramid+of+Giza"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Pyramids of Giza in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="congresso-nacional">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/congresso.avif" width="3000" height="2000" alt="Congresso Nacional building in Brasília"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="congresso-nacional" aria-describedby="desc-congresso">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Congresso Nacional</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-congresso">Brasília, Brazil</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Congresso+Nacional+Brasilia" target="_blank"
+                  rel="noopener noreferrer" aria-label="Open Congresso Nacional in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="temple-bar">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/temple-bar.avif" width="900" height="600" alt="Temple Bar pub district street in Dublin"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="temple-bar" aria-describedby="desc-temple-bar">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Temple Bar</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-temple-bar">Dublin, Ireland</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Temple+Bar+Dublin"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Temple Bar in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="louvre">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/louvre.avif" width="3072" height="2304" alt="Louvre Museum and glass pyramid" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="louvre" aria-describedby="desc-louvre">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Louvre Museum</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-louvre">Paris, France</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Louvre+Museum+Paris"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Louvre Museum in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="trevi-fountain">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/trevi-fountain.avif" width="3637" height="2474" alt="Trevi Fountain in Rome" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="trevi-fountain" aria-describedby="desc-trevi">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Trevi Fountain</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-trevi">Rome, Italy</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Trevi+Fountain+Rome"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Trevi Fountain in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="great-wall">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/great-wall.avif" width="2400" height="1600"
+              alt="The Great Wall of China winding along ridgelines" loading="lazy" decoding="async"
+              fetchpriority="high">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="great-wall" aria-describedby="desc-great-wall">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Great Wall of China</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-great-wall">Miyun District, China</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Jinshanling+Great+Wall+China"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Great Wall of China in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="sydney-opera">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/sydney-opera.avif" width="3072" height="2304"
+              alt="Sydney Opera House white sail roofs and harbour" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="sydney-opera" aria-describedby="desc-sydney">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Sydney Opera House</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-sydney">Sydney, Australia</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Sydney+Opera+House+Australia"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Sydney Opera House in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder col-2" data-id="stonehenge">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/stonehenge.avif" width="3872" height="2592"
+              alt="Stonehenge prehistoric stone circle on grassland" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="stonehenge" aria-describedby="desc-stonehenge">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Stonehenge</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-stonehenge">Amesbury, United Kingdom</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Stonehenge+England"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Stonehenge in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="petra">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/petra.avif" width="3072" height="2304" alt="The Treasury façade at Petra" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="petra" aria-describedby="desc-petra">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Petra</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-petra">Wadi Musa, Jordan</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Petra+Jordan"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Petra in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="eiffel-tower">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/eiffel-tower.avif" width="3168" height="4752" alt="Eiffel Tower seen from below against sky"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="eiffel-tower" aria-describedby="desc-eiffel">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Eiffel Tower</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-eiffel">Paris, France</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Eiffel+Tower+Paris+France"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Eiffel Tower in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder col-2" data-id="colosseum">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/colosseum.avif" width="3024" height="4032" alt="The Roman Colosseum" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="colosseum" aria-describedby="desc-colosseum">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Colosseum</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-colosseum">Rome, Italy</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Colosseum+Rome+Italy"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Colosseum in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="golden-gate">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/golden-gate.avif" width="3072" height="2304" alt="Golden Gate Bridge spanning the strait"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="golden-gate" aria-describedby="desc-golden">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Golden Gate Bridge</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-golden">San Francisco, United States</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Golden+Gate+Bridge+San+Francisco"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Golden Gate Bridge in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder col-2" data-id="taj-mahal">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/taj-mahal.avif" width="3456" height="2304" alt="The Taj Mahal and reflecting pools"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="taj-mahal" aria-describedby="desc-taj">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Taj Mahal</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-taj">Agra, India</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Taj+Mahal+Agra+India"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Taj Mahal in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="angkor-wat">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/angkor-wat.avif" width="3000" height="2250"
+              alt="Angkor Wat temple reflected in water at sunrise" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="angkor-wat" aria-describedby="desc-angkor">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Angkor Wat</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-angkor">Siem Reap, Cambodia</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Angkor+Wat+Cambodia"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Angkor Wat in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder col-2" data-id="basilica-sao-pedro">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/basilica-sao-pedro.avif" width="3000" height="2000" alt="St. Peter's Basilica and dome"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="basilica-sao-pedro" aria-describedby="desc-basilica">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Basilica de São Pedro</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-basilica">Vatican City</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=St+Peter%27s+Basilica+Vatican"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open St. Peter's Basilica in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="machu-picchu">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/machu-picchu.avif" width="3000" height="2250" alt="Machu Picchu ruins among peaks and clouds"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="machu-picchu" aria-describedby="desc-machu">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Machu Picchu</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-machu">Aguas Calientes, Peru</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Machu+Picchu+Peru"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Machu Picchu in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="big-ben">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/big-ben.avif" width="5630" height="6512" alt="Elizabeth Tower (Big Ben) in London"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="big-ben" aria-describedby="desc-bigben">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Big Ben</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-bigben">London, United Kingdom</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Elizabeth+Tower+Big+Ben+London"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Big Ben in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="forbidden-city">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/forbidden-city.avif" width="2816" height="2112"
+              alt="Hall of Supreme Harmony in the Forbidden City" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="forbidden-city" aria-describedby="desc-forbidden">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Forbidden City</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-forbidden">Beijing, China</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Forbidden+City+Beijing"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Forbidden City in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="christ-redeemer">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/christ-redeemer.avif" width="1704" height="2272"
+              alt="Christ the Redeemer statue above Rio de Janeiro" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="christ-redeemer" aria-describedby="desc-christ">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Christ the Redeemer</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-christ">Rio de Janeiro, Brazil</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Christ+the+Redeemer+Rio+de+Janeiro+Brazil"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Christ the Redeemer in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="niagara-falls">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/niagara-falls.avif" width="3072" height="2304" alt="Niagara Falls with mist and rainbow"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="niagara-falls" aria-describedby="desc-niagara">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Niagara Falls</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-niagara">Niagara Falls, Canada &amp; United States</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Niagara+Falls"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Niagara Falls in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="sagrada-familia">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/sagrada-familia.avif" width="4000" height="6000"
+              alt="Sagrada Família basilica intricate towers and façade" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="sagrada-familia" aria-describedby="desc-sagrada">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Sagrada Família</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-sagrada">Barcelona, Spain</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Sagrada+Familia+Barcelona+Spain"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Sagrada Família in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="empire-state">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/empire-state.avif" width="2848" height="4272"
+              alt="Empire State Building aerial view in Manhattan" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="empire-state" aria-describedby="desc-empire">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Empire State Building</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-empire">New York, United States</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Empire+State+Building+New+York"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Empire State Building in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="tower-bridge">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/tower-bridge.avif" width="3948" height="2479" alt="Tower of London from the Thames"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="tower-bridge" aria-describedby="desc-tower-london">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Tower Bridge</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-tower-london">London, United Kingdom</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tower+of+London"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Tower of London in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="acropolis">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/acropolis.avif" width="4256" height="2832" alt="The Parthenon on the Acropolis hill"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="acropolis" aria-describedby="desc-acropolis">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Acropolis of Athens</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-acropolis">Athens, Greece</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Acropolis+Athens+Greece"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Acropolis of Athens in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="chichen-itza">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/chichen-itza.avif" width="3264" height="2448" alt="El Castillo pyramid at Chichén Itzá"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="chichen-itza" aria-describedby="desc-chichen">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Chichén Itzá</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-chichen">Tinum, Mexico</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Chichen+Itza+Mexico"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Chichén Itzá in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="times-square">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/times-square.avif" width="4000" height="3000" alt="Times Square in New York City"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="times-square" aria-describedby="desc-times">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Times Square</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-times">New York, United States</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Times+Square+New+York"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Times Square in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="london-eye">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/london-eye.avif" width="3888" height="2592" alt="London Eye at night" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="london-eye" aria-describedby="desc-london-eye">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">London Eye</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-london-eye">London, United Kingdom</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=London+Eye"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open London Eye in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="catedral-brasilia">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/catedral-brasilia.avif" width="2000" height="1500" alt="Metropolitan Cathedral of Brasília"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="catedral-brasilia"
+                      aria-describedby="desc-catedral-bsb">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Catedral de Brasília</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-catedral-bsb">Brasília, Brazil</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Catedral+Metropolitana+Brasilia"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Catedral de Brasília in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="statue-of-liberty">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/statue-of-liberty.avif" width="2848" height="4272" alt="Statue of Liberty against blue sky"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="statue-of-liberty" aria-describedby="desc-liberty">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Statue of Liberty</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-liberty">New York, United States</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Statue+of+Liberty+New+York+USA"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Statue of Liberty in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="mount-fuji">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/mount-fuji.avif" width="2592" height="1944" alt="Mount Fuji above Lake Kawaguchi"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="mount-fuji" aria-describedby="desc-fuji">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Mount Fuji</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-fuji">Fujikawaguchiko, Japan</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Mount+Fuji+Japan"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Mount Fuji in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="easter-island">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/easter-island.avif" width="2816" height="2112"
+              alt="Moai statues on the slopes of Rano Raraku" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="easter-island" aria-describedby="desc-easter">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Easter Island (Rapa Nui)</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-easter">Hanga Roa, Chile</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rano+Raraku+Easter+Island"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Easter Island in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="buckingham-palace">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/buckingham-palace.avif" width="9000" height="5426" alt="Buckingham Palace facade"
+              loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="buckingham-palace" aria-describedby="desc-buckingham">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Buckingham Palace</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-buckingham">London, United Kingdom</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Buckingham+Palace+London"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Buckingham Palace in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="hayden-planetarium">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/hayden-planetarium.avif" width="3000" height="2000"
+              alt="Rose Center for Earth and Space at AMNH" loading="lazy" decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="hayden-planetarium" aria-describedby="desc-hayden">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Hayden Planetarium</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-hayden">New York, United States</p>
+                </div>
+                <a class="maps-btn"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Hayden+Planetarium+American+Museum+Natural+History"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Hayden Planetarium in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="pantheon-rome">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/pantheon-rome.avif" width="3350" height="3830" alt="Pantheon exterior in Rome" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="pantheon-rome" aria-describedby="desc-pantheon-rome">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Pantheon</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-pantheon-rome">Rome, Italy</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pantheon+Rome+Italy"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Pantheon in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="wonder" data-id="tower-of-pisa">
+        <article class="card">
+          <div class="card-media">
+            <img src="imgs/tower-of-pisa.avif" width="2000" height="3000" alt="Leaning Tower of Pisa" loading="lazy"
+              decoding="async">
+            <div class="card-overlay">
+              <div class="card-body">
+                <div class="card-body-main">
+                  <label class="check-row">
+                    <input type="checkbox" name="visited" value="tower-of-pisa" aria-describedby="desc-pisa">
+                    <span class="check-ui" aria-hidden="true"></span>
+                    <span class="wonder-name">Tower of Pisa</span>
+                  </label>
+                  <p class="wonder-meta" id="desc-pisa">Pisa, Italy</p>
+                </div>
+                <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Leaning+Tower+of+Pisa"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open Tower of Pisa in Google Maps"><svg
+                    class="maps-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    aria-hidden="true" focusable="false">
+                    <path fill="currentColor"
+                      d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg><span class="sr-only">Google Maps</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+    </ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
