@@ -1,0 +1,72 @@
+[submodule "projects/ana1"]
+	path = projects/ana1
+	url = git@github-ideyou:ideyou/ana1.git
+	branch = master
+[submodule "projects/endrick1"]
+	path = projects/endrick1
+	url = git@github-ideyou:ideyou/endrick1.git
+	branch = master
+[submodule "projects/evelyn1"]
+	path = projects/evelyn1
+	url = git@github-ideyou:ideyou/evelyn1.git
+	branch = master
+[submodule "projects/joao1"]
+	path = projects/joao1
+	url = git@github-ideyou:ideyou/joao1.git
+	branch = master
+[submodule "projects/joel1"]
+	path = projects/joel1
+	url = git@github-ideyou:ideyou/joel1.git
+	branch = master
+[submodule "projects/josue1"]
+	path = projects/josue1
+	url = git@github-ideyou:ideyou/josue1.git
+	branch = master
+[submodule "projects/kevyn1"]
+	path = projects/kevyn1
+	url = git@github-ideyou:ideyou/kevyn1.git
+	branch = master
+[submodule "projects/laura1"]
+	path = projects/laura1
+	url = git@github-ideyou:ideyou/laura1.git
+	branch = master
+[submodule "projects/livia1"]
+	path = projects/livia1
+	url = git@github-ideyou:ideyou/livia1.git
+	branch = master
+[submodule "projects/luis1"]
+	path = projects/luis1
+	url = git@github-ideyou:ideyou/luis1.git
+	branch = master
+[submodule "projects/mariavictoria1"]
+	path = projects/mariavictoria1
+	url = git@github-ideyou:ideyou/mariavitoria1.git
+	branch = master
+[submodule "projects/mercia1"]
+	path = projects/mercia1
+	url = git@github-ideyou:ideyou/mercia1.git
+	branch = master
+[submodule "projects/murilo1"]
+	path = projects/murilo1
+	url = git@github-ideyou:ideyou/murilo1.git
+	branch = master
+[submodule "projects/nirlani1"]
+	path = projects/nirlani1
+	url = git@github-ideyou:ideyou/nirlani1.git
+	branch = master
+[submodule "projects/rayck1"]
+	path = projects/rayck1
+	url = git@github-ideyou:ideyou/rayck1.git
+	branch = master
+[submodule "projects/thyago1"]
+	path = projects/thyago1
+	url = git@github-ideyou:ideyou/thyago1.git
+	branch = master
+[submodule "projects/victoria1"]
+	path = projects/victoria1
+	url = git@github-ideyou:ideyou/victoria1.git
+	branch = master
+[submodule "projects/vitoria1"]
+	path = projects/vitoria1
+	url = git@github-ideyou:ideyou/vitoria1.git
+	branch = master
