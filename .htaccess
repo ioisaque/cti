@@ -1,7 +1,24 @@
-<FilesMatch "manifest\.json$">
-    FileETag None
-    Header unset ETag
-    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+RewriteEngine On
+DirectoryIndex index.html
+RewriteRule ^station\.json$ assets/station.json [L]
+RewriteRule ^logo\.png$ assets/img/logo.png [L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|svg|png|jpe?g|gif|webp|avif|ico|json)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires "0"
-</FilesMatch>
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType image/svg+xml "access plus 0 seconds"
+  ExpiresByType image/png "access plus 0 seconds"
+  ExpiresByType image/jpeg "access plus 0 seconds"
+  ExpiresByType image/gif "access plus 0 seconds"
+  ExpiresByType image/webp "access plus 0 seconds"
+  ExpiresByType image/avif "access plus 0 seconds"
+</IfModule>

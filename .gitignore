@@ -1,1 +1,44 @@
+# --- Runtime / generated ---
+assets/data/
+*.log
+*.tmp
+
+# --- Local overrides ---
+assets/config/discover.conf.local
+
+# --- Projetos da turma (subpastas com manifest.json dos alunos) ---
+/*
+!/.gitignore
+!/.htaccess
+!/.gitmodules
+!/index.html
+!/manifest.json
+!/assets/
+!/projects/
+projects/*
+!projects/*/
+
+# --- OS ---
 .DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Editors / IDE ---
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# --- PHP / env ---
+.env
+.env.*
+*.local.php
+.phpunit.result.cache
