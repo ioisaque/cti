@@ -15,8 +15,8 @@ assets/config/discover.conf.local
 !/manifest.json
 !/assets/
 !/projects/
-projects/*
-!projects/*/
+/projects/*
+!/projects/*/
 
 # --- OS ---
 .DS_Store

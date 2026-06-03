@@ -1,0 +1,76 @@
+.user_master {
+  color: #ff0000 !important;
+  font-weight: bold;
+  text-shadow:
+    0em 0em 0.5em #be0c0c,
+    0em 0em 0.5em #000000,
+    0em 0em 0.5em #ff002d;
+  background-image: url("https://cdn.isaque.it/assets/gifs/37.gif");
+}
+.user_master img {
+  width: 14px;
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+}
+.user_admin {
+  color: #ffb231 !important;
+  font-weight: bold;
+  text-shadow:
+    0em 0em 0.25em #024465,
+    0em 0em 0.25em #ffb231,
+    0em 0em 0.25em #237131;
+  background-image: url("https://cdn.isaque.it/assets/gifs/sparkle12.gif");
+}
+
+.user_mod {
+  color: blue;
+  font-weight: bold;
+  text-shadow:
+    0em 0em 0.5em blue,
+    0em 0em 0.5em blue,
+    0em 0em 0.5em blue;
+  background-image: url("https://cdn.isaque.it/assets/gifs/sparkle12.gif");
+}
+.user_supermod {
+  color: #a032ea !important;
+  font-weight: bold;
+  text-shadow:
+    0em 0em 0.7em #7500c3,
+    0em 0em 0.7em #7500c3,
+    0em 0em 0.7em #7500c3;
+  background-image: url("https://cdn.isaque.it/assets/gifs/sparkle12.gif");
+}
+
+.user_coder {
+  color: cyan;
+  font-weight: bold;
+  text-shadow:
+    0em 0em 0.5em green,
+    0em 0em 0.5em green,
+    0em 0em 0.5em green;
+  background-image: url("https://cdn.isaque.it/assets/gifs/sparkle12.gif");
+}
+
+.user_vip {
+  color: rgb(255, 252, 0) !important;
+  text-shadow:
+    0em 0em 0.5em #c2941d,
+    0em 0em 0.5em #c2a11d,
+    0em 0em 0.5em red;
+}
+.user_honor {
+  color: cyan !important;
+  text-shadow:
+    0em 0em 0.5em #3785f9,
+    0em 0em 0.5em #126aed,
+    0em 0em 0.5em #115acb;
+}
+
+.user_registered {
+  color: white !important;
+  text-shadow:
+    0em 0em 0.2em rgba(73, 73, 73, 0.47),
+    0em 0em 0.2em rgba(37, 37, 37, 0.45),
+    0em 0em 0.1em #ffffff;
+}

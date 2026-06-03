@@ -1,0 +1,4 @@
+{
+  "localHubHosts": ["professor.local", "isaque.local"],
+  "discoverAdminHosts": ["isaque.local", "professor.local"]
+}

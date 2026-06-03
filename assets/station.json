@@ -1,0 +1,15 @@
+{
+  "color": "#ffb231",
+  "titleClass": "user_admin",
+  "textClass": "",
+  "background_color": "#000",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "name": "Professor CTI",
+  "master": true
+}
