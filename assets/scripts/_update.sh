@@ -16,7 +16,11 @@ git pull --ff-only
 echo "==> Submodules: sync URLs"
 git submodule sync --recursive
 
-echo "==> Submodules: init + fetch + update (remote branch from .gitmodules)"
+echo "==> Submodules: fetch, drop untracked files, update to latest remote branch"
+git submodule foreach --recursive '
+  git fetch origin
+  git clean -fd
+'
 git submodule update --init --recursive --remote
 
 echo
